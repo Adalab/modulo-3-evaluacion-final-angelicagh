@@ -1,10 +1,12 @@
-import '../styles/components/_header.scss'
+
+import logo from "../images/logo1.png"
 
 function Header() {
   
   return (
     <>
-      <p class="header">Soy el header</p>
+      
+      <img src={logo} alt="Logo Harry Potter" />
     </>
   )
 }
