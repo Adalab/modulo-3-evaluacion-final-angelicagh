@@ -22,7 +22,7 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse}) {
       <option value="">Todas</option>
       {
         phouse.map(item =>
-        <option value={item}>{item}</option>
+        <option key={item.id} value={item}>{item}</option>
         )
       }
 

@@ -1,4 +1,4 @@
-
+import CharacterCard from "./CharacterCard"
 
 function CharactersList({pcharactersList}) {
   
@@ -8,20 +8,20 @@ function CharactersList({pcharactersList}) {
 
 
    
-
+    
    <ul>
     {
       pcharactersList.map(item => {
         return (
-          <li key={item.id}>
-            <img src={item.image==="" ? `https://placehold.co/237x341?text=${item.name}`  : item.image} alt={`Imagen de ${item.name}`} />
-            <p>{item.name}</p>
-            <p>{item.species}</p>
-          </li>
+          
+          <CharacterCard key={item.id} pitem={item}/>
+          
         )
       })
     }
    </ul>
+   
+   
       
     </>
   )

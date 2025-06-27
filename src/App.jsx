@@ -2,10 +2,11 @@ import './styles/App.scss'
 import Header from './components/Header'
 import CharactersList from './components/CharactersList'
 import Filters from './components/Filters'
-import CharacterDetail from './components/CharacterDetail'
 import { useEffect, useState } from 'react'
-import CharacterCard from './components/CharacterCard'
 import { Routes, Route } from 'react-router'
+import DetailContact from './components/DetailContact'
+
+
 
 
 function App() {
@@ -38,16 +39,26 @@ function App() {
   return (
     <>
     <Header/>
-    <Filters psearchName={searchName} psetSearchName={setSearchName} phouse={house} psetSearchHouse={setSearchHouse}/>
-    <CharactersList pcharactersList={filterCharacters}/>
-    <CharacterDetail/>
+    
+   {/*  RUTAS */}
 
-    <Routes>
+   <Routes>
 
-      <Route path="/detail/:id" element={<CharacterDetail/>}></Route>
+    <Route path="/" element={
+      <>
+      <Filters psearchName={searchName} psetSearchName={setSearchName} phouse={house} psetSearchHouse={setSearchHouse}/>
+      <CharactersList pcharactersList={filterCharacters}/>
+      </>
+    }Route/>
 
-    </Routes>
+    {/* HA DEJADO DE VERSE LA LISTA CUANDO LO HE ENGLOBADO EN UNA RUTA */}
+
       
+      <Route  path="/detail/:id" element={<DetailContact pcharactersList={filterCharacters}/>}></Route>
+
+   </Routes>
+
+
     </>
   )
 }
