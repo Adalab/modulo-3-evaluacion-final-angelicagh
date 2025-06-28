@@ -4,7 +4,8 @@ import CharactersList from './components/CharactersList'
 import Filters from './components/Filters'
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router'
-import DetailContact from './components/DetailContact'
+import CharacterDetail from './components/CharacterDetail'
+
 
 
 
@@ -38,6 +39,9 @@ function App() {
   
   return (
     <>
+
+    
+
     <Header/>
     
    {/*  RUTAS */}
@@ -54,7 +58,7 @@ function App() {
     {/* HA DEJADO DE VERSE LA LISTA CUANDO LO HE ENGLOBADO EN UNA RUTA */}
 
       
-      <Route  path="/detail/:id" element={<DetailContact pcharactersList={filterCharacters}/>}></Route>
+      <Route  path="/detail/:id" element={<CharacterDetail pcharactersList={filterCharacters}/>}></Route>
 
    </Routes>
 

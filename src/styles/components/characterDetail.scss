@@ -1,0 +1,69 @@
+
+
+  
+  /* background: linear-gradient(to bottom, #ffffff 50%, #7a1d2c 50%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+
+
+
+.character-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 29, 44);
+    width: 50rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #852306 25%, #ce8602 20%);
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-detail-container {
+    display: flex;
+    border: 3px solid black;
+        width: 50rem;
+        
+   
+
+}
+
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+
+
+
+}
+
+
+
+ .character-detail-name-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+    padding-inline: 2rem;
+    
+} 
+
+.character-detail-name {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.character-card-img {
+    border-radius: 5%;
+}
+
+.character-detail-props {
+    padding-inline: 2rem;
+
+}

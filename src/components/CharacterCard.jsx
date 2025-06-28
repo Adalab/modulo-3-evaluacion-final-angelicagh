@@ -8,10 +8,10 @@ function CharacterCard({pitem}) {
 
     
      <li >
-      <Link to={`/detail/${pitem.id}`}> Ver más
-      <img src={pitem.image==="" ? `https://placehold.co/237x341?text=${pitem.name}`  : pitem.image} alt={`Imagen de ${pitem.name}`} />
-      <p>{pitem.name}</p>
-      <p>{pitem.species}</p>
+      <Link className="link" to={`/detail/${pitem.id}`}>
+      <img className="character-card-img" src={pitem.image==="" ? `https://placehold.co/237x341?text=${pitem.name}`  : pitem.image} alt={`Imagen de ${pitem.name}`} />
+      <p className="character-card-name">{pitem.name}</p>
+      <p className="character-card-species">{pitem.species}</p>
       </Link>
     </li>
     

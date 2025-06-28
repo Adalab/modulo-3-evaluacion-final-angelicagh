@@ -4,11 +4,8 @@ function CharactersList({pcharactersList}) {
   
   return (
     <>
-   <h1>Listado de personajes</h1>
-
-
-   
-    
+     
+    <h1>Buscador de personajes</h1>
    <ul>
     {
       pcharactersList.map(item => {

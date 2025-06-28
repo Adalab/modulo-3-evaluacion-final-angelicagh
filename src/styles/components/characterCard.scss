@@ -1,0 +1,28 @@
+li {
+    border: 0.8rem solid black;
+    border-radius: 5%;
+    text-align: center;
+    background-color: wheat
+};
+
+.character-card-img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    
+}
+
+.character-card-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.character-card-species {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

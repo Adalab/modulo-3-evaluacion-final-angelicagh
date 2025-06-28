@@ -1,12 +1,27 @@
 @use 'core/reset';
+@use 'components/header';
+@use 'components/charactersList';
+@use 'components/characterCard';
+@use 'components/filters';
+@use 'components/characterDetail';
 
-.pasos {
-    list-style-type: decimal;
-}
 
-#root {
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  }
+  } */
+
+
+/* body {
+  background-image: url("/src/images/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+body {
+  background-color:rgb(100, 110, 83)
+}
+
