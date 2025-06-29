@@ -10,11 +10,21 @@
   justify-content: center;
   border: 8px solid black;
   border-radius: 2%;
-  //background-color: #C9B387;
- margin-inline: 35rem;
- /* background-color: rgb(255, 255, 255); */
- background-image: url(".././images/card1.png");
+  
+ margin-inline: 32rem;
+ padding-bottom: 1.5rem;
+ 
+ background-image: url(".././images/card1.png"); 
+ margin-bottom: 2rem;
+
+
+
 }
+
+
+
+
+
 
 .character-detail-name-img {
   display: flex;
@@ -35,11 +45,13 @@
 
   font-size: 1.2rem;
   
-  width: 20rem;
+  width: 30rem;
   height: auto;
   
   line-height: 1.5; //separacion entre lineas
-  background-color: white;
+  
+  
+ 
   
   
   
@@ -65,9 +77,11 @@
 }
 
 .img-escudo {
-  width: 10rem;
+  width: 8rem;
   padding-top: 1rem;
-  padding-left: 2rem;
+  padding-right: -2rem;
+ 
+  
   display: flex;
   
   
@@ -80,6 +94,8 @@
  
 
   gap: 2rem;
+
+  
 
 }
 

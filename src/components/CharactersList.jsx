@@ -1,5 +1,6 @@
 import CharacterCard from "./CharacterCard"
 
+
 function CharactersList({pcharactersList} ) {
 
  
@@ -8,10 +9,11 @@ function CharactersList({pcharactersList} ) {
     <>
      
     {/* el ternario es para decir que si no hay ningun personaje en la lista, es decir, que la lista esta vacia, se muestre el mensaje, y si si que hay, se hace un bucle y se muestran los personajes que coincidan */}
+    <div className="no-matches-container">
    <ul>
     {
       pcharactersList.length === 0 //
-      ? <p>No hay personajes que coincidan con tu búsqueda</p>
+      ? <p className="no-matches">No matches</p>
       :
       pcharactersList.map(item => {
         return (
@@ -20,8 +22,14 @@ function CharactersList({pcharactersList} ) {
           
         )
       })
+      
     }
+    
+    
    </ul>
+   </div>
+
+   
    
    
       

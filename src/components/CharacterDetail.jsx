@@ -17,7 +17,7 @@ function DetailContact({pcharactersList}) {
   return (
     <>
     
-    <h1>Tarjeta del personaje</h1>
+    <h1>Character card</h1>
     
   <div className="character-detail-container">
  <div className="character-detail">
@@ -47,24 +47,29 @@ function DetailContact({pcharactersList}) {
     
     <div className="character-detail-props">
       
-    <p ><strong>Especie: </strong>{selectedCharacter.species}</p>
-    <p><strong>Género: </strong>{selectedCharacter.gender}</p>
-    <p><strong>Estatus: </strong>
+    <p ><strong>Species: </strong>{selectedCharacter.species}</p>
+    <p><strong>Gender: </strong>{selectedCharacter.gender}</p>
+    <p><strong>Status: </strong>
         {selectedCharacter.alive
-          ? selectedCharacter.gender === "male"
-            ? "vivo"
-            : "viva"
-          : selectedCharacter.gender === "male"
-            ? "muerto"
-            : "muerta"}
+          
+            ? "alive"
+            : "dead"
+        }
+          
     </p>
-    <p><strong>Casa: </strong>{selectedCharacter.house}</p>
+    <p><strong>House: </strong>{selectedCharacter.house}</p>
+    
 
- <p><strong>Nombres alternativos: </strong>
+
+
+    <p><strong>Patronus: </strong>{selectedCharacter.patronus}</p>
+
+
+ <p><strong>Alternative names: </strong>
       {selectedCharacter.alternate_names.length === 0
-        ? ""
+        ? "none"
         : selectedCharacter.alternate_names.join(", ")}
-    </p> {/* esta opcion hace que, aunque el array este vacio, se pinte una linea en blanco */}
+    </p> 
      
     </div>
     </div>

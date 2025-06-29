@@ -23,19 +23,19 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse}) {
   return (
     <>
 
-<h1 >Buscador de personajes</h1>
+<h1 >Character finder</h1>
 
     <form className="filters" onSubmit={handleSubmit}>
       <div>
-    <label htmlFor="name">Busca por personaje </label>
+    <label htmlFor="name">Search by character </label>
     <input onChange={handleName} type="text" value={psearchName} /> {/* importante dar un valor al input */}
     </div>
 
 
     <div>
-    <label htmlFor="house">Busca por casa </label>
+    <label htmlFor="house">Search by house </label>
     <select onChange={handleHouse} name="" id="">
-      <option value="">Todas</option>
+      <option value="">All</option>
       {
         phouse.map(item =>
         <option key={item.id} value={item}>{item}</option>
