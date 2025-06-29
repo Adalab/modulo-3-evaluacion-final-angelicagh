@@ -14,10 +14,10 @@ function Header() {
   return (
     <>
     <div className="logo-container">
-      <div className="logo">
-      <img src={logo} alt="Logo Harry Potter" />
+      
+      <img className="logo" src={logo} alt="Logo Harry Potter" />
             </div>
-            </div>
+            
 
       
 

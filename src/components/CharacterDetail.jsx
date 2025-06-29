@@ -1,4 +1,8 @@
 import { useParams } from "react-router"
+import gryffindor from "../images/gryf.png"
+import hufflepuff from "../images/huff.png"
+import ravenclaw from "../images/rav.png"
+import slytherin from "../images/sly.png"
 
 function DetailContact({pcharactersList}) {
 
@@ -22,9 +26,28 @@ function DetailContact({pcharactersList}) {
     <img className="character-detail-img" src={selectedCharacter.image === "" ? `https://placehold.co/237x341?text=${selectedCharacter.name}` : selectedCharacter.image } alt={`Imagen de ${selectedCharacter.name}`} />
   </div>
 
+
+<div className="props-house">
+    <div>
+      <div className="props-house-container">
+      {selectedCharacter.house === "Gryffindor" ? (
+        <img className="img-escudo" src={gryffindor} alt="Escudo de Gryffindor" />
+          ) : selectedCharacter.house === "Hufflepuff" ? (
+          <img className="img-escudo" src={hufflepuff} alt="Escudo de Hufflepuff" />
+          ) : selectedCharacter.house === "Ravenclaw" ? (
+          <img className="img-escudo" src={ravenclaw} alt="Escudo de Ravenclaw" />
+          ) : (
+          <img className="img-escudo" src={slytherin} alt="Escudo de Slytherin" />
+          )}
+          </div>
+
+
+
+    </div>
+    
     <div className="character-detail-props">
       
-    <p className="detail-"><strong>Especie: </strong>{selectedCharacter.species}</p>
+    <p ><strong>Especie: </strong>{selectedCharacter.species}</p>
     <p><strong>Género: </strong>{selectedCharacter.gender}</p>
     <p><strong>Estatus: </strong>
         {selectedCharacter.alive
@@ -35,18 +58,20 @@ function DetailContact({pcharactersList}) {
             ? "muerto"
             : "muerta"}
     </p>
+    <p><strong>Casa: </strong>{selectedCharacter.house}</p>
 
+ <p><strong>Nombres alternativos: </strong>
+      {selectedCharacter.alternate_names.length === 0
+        ? ""
+        : selectedCharacter.alternate_names.join(", ")}
+    </p> {/* esta opcion hace que, aunque el array este vacio, se pinte una linea en blanco */}
+     
+    </div>
+    </div>
+    </div>
+    
 
    
-
-
-    <p>{`Casa: ${selectedCharacter.house}`}</p>
-        <p>{selectedCharacter.alternate_names.length === 0
-        ? ""
-        : `Nombres alternativos: ${selectedCharacter.alternate_names.join(", ")}`}      
-    </p> {/* esta opcion hace que, aunque el array este vacio, se pinte una linea en blanco */}
-    </div>
-    </div>
 
     
 

@@ -12,50 +12,74 @@
   border-radius: 2%;
   //background-color: #C9B387;
  margin-inline: 35rem;
- background-color: rgb(255, 255, 255);
-  
-  
-
-  
- 
-  
-  
-
+ /* background-color: rgb(255, 255, 255); */
+ background-image: url(".././images/card1.png");
 }
 
 .character-detail-name-img {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  gap: 1rem;
+  gap: 1.5rem;
   padding-bottom: 1.5rem;
   
   width: 20rem;
-  height: auto;
- 
-  
-
-  
+  height: auto; 
 }
 
 .character-detail-props {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
+
   font-size: 1.2rem;
   
   width: 20rem;
   height: auto;
   
+  line-height: 1.5; //separacion entre lineas
+  background-color: white;
+  
   
   
 }
+
+
+
 
 .character-detail-name {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  padding-top: 2rem;
   
+}
+
+.props-house {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4rem;
+
+}
+
+.img-escudo {
+  width: 10rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  
+  
+  
+  
+}
+
+.props-house-container {
+   display: flex;
+ 
+
+  gap: 2rem;
+
 }
 
