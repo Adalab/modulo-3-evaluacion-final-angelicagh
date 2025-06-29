@@ -1,13 +1,18 @@
 import CharacterCard from "./CharacterCard"
 
-function CharactersList({pcharactersList}) {
+function CharactersList({pcharactersList} ) {
+
+ 
   
   return (
     <>
      
-    <h1>Buscador de personajes</h1>
+    {/* el ternario es para decir que si no hay ningun personaje en la lista, es decir, que la lista esta vacia, se muestre el mensaje, y si si que hay, se hace un bucle y se muestran los personajes que coincidan */}
    <ul>
     {
+      pcharactersList.length === 0 //
+      ? <p>No hay personajes que coincidan con tu búsqueda</p>
+      :
       pcharactersList.map(item => {
         return (
           
