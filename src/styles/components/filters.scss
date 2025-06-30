@@ -19,10 +19,9 @@ input, select, button {
     border: 2px solid #3b2b16;
     border-radius: 6px;
     width: 5rem; 
-    height: 2rem; 
-
+    height: 2.2rem;     
     box-shadow: 0 0 10px rgba(122, 95, 52, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .reset:hover {
@@ -31,3 +30,4 @@ input, select, button {
   box-shadow: 0 0 20px rgba(122, 95, 52, 0.6);
   
 }
+

@@ -1,3 +1,4 @@
+
 function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSearchGender, pgender, psearchGender, psearchHouse}) {
 
   //para guardar los datos que va escribiendo el usuario
@@ -57,7 +58,7 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
             }  
           </select>
         </div>
-        <button className="reset" onClick={handleReset}>Reset</button>
+        <button className="reset" onClick={handleReset}>Reset</button>     
       </form>
     </>
   )

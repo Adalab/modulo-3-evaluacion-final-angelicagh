@@ -19,3 +19,23 @@ h3 {
   padding-top: 2rem;
   color: #3b2b16;
 }
+
+//animacion del h3
+.no-muggles span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(-20px);
+  animation: drop 0.4s forwards ease-out;
+
+  
+}
+
+
+@keyframes drop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+   
+  }
+}
+
