@@ -1,85 +1,66 @@
 import { useParams } from "react-router"
-import gryffindor from "../images/gryf.png"
-import hufflepuff from "../images/huff.png"
-import ravenclaw from "../images/rav.png"
-import slytherin from "../images/sly.png"
+import gryffindor from "../images/h1.png"
+import hufflepuff from "../images/h3.png"
+import ravenclaw from "../images/h4.png"
+import slytherin from "../images/h2.png"
+import { Link } from "react-router"
 
 function DetailContact({pcharactersList}) {
 
-    const {id} = useParams()
-    
-
-    const selectedCharacter = pcharactersList.find(item => item.id === id)
-
-
-
+  const {id} = useParams()
+  const selectedCharacter = pcharactersList.find(item => item.id === id)
 
   return (
     <>
-    
     <h1>Character card</h1>
-    
-  <div className="character-detail-container">
- <div className="character-detail">
-  <div className="character-detail-name-img">
-    <p className="character-detail-name">{selectedCharacter.name}</p>
-    <img className="character-detail-img" src={selectedCharacter.image === "" ? `https://placehold.co/237x341?text=${selectedCharacter.name}` : selectedCharacter.image } alt={`Imagen de ${selectedCharacter.name}`} />
-  </div>
-
-
-<div className="props-house">
-    <div>
-      <div className="props-house-container">
-      {selectedCharacter.house === "Gryffindor" ? (
-        <img className="img-escudo" src={gryffindor} alt="Escudo de Gryffindor" />
-          ) : selectedCharacter.house === "Hufflepuff" ? (
-          <img className="img-escudo" src={hufflepuff} alt="Escudo de Hufflepuff" />
-          ) : selectedCharacter.house === "Ravenclaw" ? (
-          <img className="img-escudo" src={ravenclaw} alt="Escudo de Ravenclaw" />
-          ) : (
-          <img className="img-escudo" src={slytherin} alt="Escudo de Slytherin" />
-          )}
+    <div className="character-detail-container">
+      <div className="card-button">
+        <Link to="/" className="button">Go back</Link>
+      <div className="character-detail">
+        <div className="character-detail-name-img">
+          <p className="character-detail-name">{selectedCharacter.name}</p>
+          <img className="character-detail-img" src={selectedCharacter.image === "" ? `https://placehold.co/237x341?text=${selectedCharacter.name}` : selectedCharacter.image } alt={`Imagen de ${selectedCharacter.name}`} />
+        </div>
+        <div className="props-house">
+          <div className="props-house-container">
+            {selectedCharacter.house === "Gryffindor" ? (
+            <img className="img-house" src={gryffindor} alt="Escudo de Gryffindor" />
+            ) : selectedCharacter.house === "Hufflepuff" ? (
+            <img className="img-house" src={hufflepuff} alt="Escudo de Hufflepuff" />
+            ) : selectedCharacter.house === "Ravenclaw" ? (
+            <img className="img-house" src={ravenclaw} alt="Escudo de Ravenclaw" />
+            ) : (
+            <img className="img-house" src={slytherin} alt="Escudo de Slytherin" />
+            )}
           </div>
+            <div className="character-detail-props">
+              <p><strong>Species: </strong>{selectedCharacter.species}</p>
+              <p><strong>Gender: </strong>{selectedCharacter.gender}</p>
+              <p><strong>Status: </strong>
+                  {selectedCharacter.alive
+                     ? "alive"
+                    : "dead"
+                  }                    
+              </p>
+              <p><strong>House: </strong>{selectedCharacter.house}</p>
+              <p><strong>Patronus: </strong>
+                  {selectedCharacter.patronus === ""
+                    ? "unspecified"
+                    : selectedCharacter.patronus
+                   }
+              </p>
+              <p><strong>Alternative names: </strong>
+                  {selectedCharacter.alternate_names.length === 0
+                    ? "none"
+                    : selectedCharacter.alternate_names.join(", ")
+                    }
+              </p>    
+            </div> 
+          </div>
+        </div>
+        
 
-
-
-    </div>
-    
-    <div className="character-detail-props">
-      
-    <p ><strong>Species: </strong>{selectedCharacter.species}</p>
-    <p><strong>Gender: </strong>{selectedCharacter.gender}</p>
-    <p><strong>Status: </strong>
-        {selectedCharacter.alive
-          
-            ? "alive"
-            : "dead"
-        }
-          
-    </p>
-    <p><strong>House: </strong>{selectedCharacter.house}</p>
-    
-
-
-
-    <p><strong>Patronus: </strong>{selectedCharacter.patronus}</p>
-
-
- <p><strong>Alternative names: </strong>
-      {selectedCharacter.alternate_names.length === 0
-        ? "none"
-        : selectedCharacter.alternate_names.join(", ")}
-    </p> 
-     
-    </div>
-    </div>
-    </div>
-    
-
-   
-
-    
-
+      </div>
     </div>
 
     

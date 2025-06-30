@@ -13,6 +13,9 @@ function Header() {
   
   return (
     <>
+
+    <h3><em>No muggles beyond this point</em></h3>
+
     <div className="logo-container">
       
       <img className="logo" src={logo} alt="Logo Harry Potter" />

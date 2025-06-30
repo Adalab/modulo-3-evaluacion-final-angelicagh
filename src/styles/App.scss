@@ -24,9 +24,11 @@
 body {
   //background-color:rgb(100, 110, 83);
   font-family: 'Milonga';
-  background-image: url("/src/images/fondo.png");
- 
+  background-image: url("/src/images/background.png");
   background-position: center; 
+  margin-bottom: 2rem;
+  color: #3b2b16;
+  //cursor: url("../images/wand3.png");
   
   
 }

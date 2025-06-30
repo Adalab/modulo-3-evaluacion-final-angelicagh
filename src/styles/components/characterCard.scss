@@ -1,23 +1,20 @@
 li {
     border: 0.8rem solid black;
     border-radius: 3%;
-    
     text-align: center;
     background-color: rgb(255, 255, 255);
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 li:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px 5px #ffaa00;;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 5px #ffaa00;;
 }
 
 .character-card-img {
     width: 200px;
     height: 300px;
-    object-fit: cover;
-    
+    object-fit: cover;   
 }
 
 .character-card-name {
@@ -39,6 +36,5 @@ li:hover {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-block: 1rem;
-    
+    padding-block: 1rem;   
 }
