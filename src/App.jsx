@@ -13,12 +13,12 @@ function App() {
   const [searchHouse, setSearchHouse] = useState("")
   const [searchGender, setSearchGender] = useState("")
 
-  useEffect(() => {
+ useEffect(() => {
     fetch("https://hp-api.onrender.com/api/characters")
       .then(response => response.json())
       .then(data => {
-          setCharactersList(data)
-          
+          setCharactersList(data);
+          localStorage.setItem("characters", JSON.stringify(data)); //1º URL COMPATIBLE: guardar en el local storage
       })
   }, [])
 
@@ -40,6 +40,8 @@ function App() {
     .filter(item => item.house === searchHouse || searchHouse === "")
     .filter(item => item.gender === searchGender || searchGender === "")
 
+    
+
   return (
     <>
     <Header/>
@@ -51,10 +53,13 @@ function App() {
         </>
       }></Route>        
       <Route  path="/detail/:id" element={<CharacterDetail pcharactersList={filterCharacters}/>}></Route>
-      <Route path="*" element={<h1 >Page not found</h1>}></Route> {/* NO SE MUESTRA */}
+      <Route path="*" element={<h1>Page not found</h1>}></Route> 
     </Routes>
     </>
   )
 }
 
 export default App
+
+
+

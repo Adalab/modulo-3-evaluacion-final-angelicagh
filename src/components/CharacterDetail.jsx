@@ -8,7 +8,11 @@ import { Link } from "react-router"
 function DetailContact({pcharactersList}) {
 
   const {id} = useParams()
-  const selectedCharacter = pcharactersList.find(item => item.id === id)
+  
+ //2º URL COMPATIBLE: primero busca en el listado (pcharactersList) y, si no lo encuentra, busca en local storage
+  const selectedCharacter =
+  pcharactersList.find(item => item.id === id) ||
+  JSON.parse(localStorage.getItem("characters") || "[]").find(item => item.id === id);
 
   return (
     <>
