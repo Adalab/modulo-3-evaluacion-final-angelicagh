@@ -7,30 +7,21 @@
 
 
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  } */
-
-
-/* body {
-  background-image: url("/src/images/fondo3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 body {
-  //background-color:rgb(100, 110, 83);
-  font-family: 'Milonga';
+    font-family: 'Milonga';
   background-image: url("/src/images/background.png");
   background-position: center; 
   margin-bottom: 2rem;
   color: #3b2b16;
-  //cursor: url("../images/wand3.png");
+  
   
   
 }
+
+* {
+  cursor: url("/public/images/wand1.png"), auto; //cambia el cursor de toda la aplicacion web
+}
+
+
 
 

@@ -1,4 +1,4 @@
-function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSearchGender, pgender}) {
+function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSearchGender, pgender, psearchGender, psearchHouse}) {
 
   //para guardar los datos que va escribiendo el usuario
   const handleName = (ev) => {
@@ -20,17 +20,24 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
     ev.preventDefault()
   }
 
+  const handleReset = () => {
+    psetSearchName("");
+    psetSearchGender("");
+    psetSearchHouse("");
+
+  }
+
   return (
     <>
       <h1 >Character finder</h1>
       <form className="filters" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Search by character </label>
-          <input onChange={handleName} type="text" value={psearchName} /> {/* importante dar un valor al input */}
+          <input onChange={handleName} type="text" id="name" value={psearchName} /> {/* importante dar un valor al input */}
         </div>
         <div>
           <label htmlFor="gender">Search by gender </label>
-          <select onChange={handleGender} name="" id="" >
+          <select onChange={handleGender} name="gender" id="gender" value={psearchGender} >
             <option value="">Both</option>
             {
               pgender.map((item, index) =>
@@ -41,7 +48,7 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
         </div>
         <div>
           <label htmlFor="house">Search by house </label>
-          <select onChange={handleHouse} name="" id="">
+          <select onChange={handleHouse} name="house" id="house" value={psearchHouse}>
             <option value="">All</option>
             {
               phouse.map((item, index) =>
@@ -50,6 +57,7 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
             }  
           </select>
         </div>
+        <button className="reset" onClick={handleReset}>Reset</button>
       </form>
     </>
   )

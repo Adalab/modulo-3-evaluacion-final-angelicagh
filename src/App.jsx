@@ -46,12 +46,12 @@ function App() {
     <Routes>
       <Route path="/" element={
         <>
-        <Filters psearchName={searchName} psetSearchName={setSearchName} phouse={house} psetSearchHouse={setSearchHouse} psearchGender={searchGender} psetSearchGender={setSearchGender} pgender={gender}/>
+        <Filters psearchName={searchName} psetSearchName={setSearchName} phouse={house} psearchHouse={searchHouse} psetSearchHouse={setSearchHouse} psearchGender={searchGender} psetSearchGender={setSearchGender} pgender={gender}/>
         <CharactersList pcharactersList={filterCharacters} />
         </>
       }></Route>        
       <Route  path="/detail/:id" element={<CharacterDetail pcharactersList={filterCharacters}/>}></Route>
-      <Route path="*" element={<h1>Página no encontrada</h1>}></Route> {/* NO SE MUESTRA */}
+      <Route path="*" element={<h1 >Page not found</h1>}></Route> {/* NO SE MUESTRA */}
     </Routes>
     </>
   )
