@@ -8,20 +8,16 @@
 
 
 body {
-    font-family: 'Milonga';
+  font-family: 'Milonga';
   background-image: url("/src/images/background.png");
   background-position: center; 
   margin-bottom: 2rem;
   color: #3b2b16;
-  
-  
-  
 }
 
 * {
-  cursor: url("/public/images/wand1.png"), auto; //cambia el cursor de toda la aplicacion web
+  cursor: url("../images/wand1.png"), auto;
 }
 
-
-
+/* PONER RESPONSIVE */
 

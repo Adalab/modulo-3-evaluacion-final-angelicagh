@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 
-Link
+
 
 function CharacterCard({pitem}) {
   return (

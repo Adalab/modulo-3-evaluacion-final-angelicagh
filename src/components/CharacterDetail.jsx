@@ -5,7 +5,7 @@ import ravenclaw from "../images/h4.png"
 import slytherin from "../images/h2.png"
 import { Link } from "react-router"
 
-function DetailContact({pcharactersList}) {
+function CharacterDetail({pcharactersList}) {
 
   const {id} = useParams()
   
@@ -46,7 +46,12 @@ function DetailContact({pcharactersList}) {
                     : "dead"
                   }                    
               </p>
-              <p><strong>House: </strong>{selectedCharacter.house}</p>
+              <p><strong>House: </strong>
+                  {selectedCharacter.house === ""
+                    ? "unspecified"
+                    : selectedCharacter.house
+                  }
+              </p>
               <p><strong>Patronus: </strong>
                   {selectedCharacter.patronus === ""
                     ? "unspecified"
@@ -62,35 +67,10 @@ function DetailContact({pcharactersList}) {
             </div> 
           </div>
         </div>
-        
-
       </div>
     </div>
-
-    
-
-
-  
-
-  
-
-
-   {/*  {selectedCharacter.alternate_names.length > 0 && (
-  <p>
-    Nombres alternativos: {selectedCharacter.alternate_names.join(", ")}
-  </p>
-)} */} {/* esta opcion hace que solo se pinte el parrafo si el array no esta vacio, si la condicion no se cumple (es decir, el array esta vacio), react ignora todo lo que hay despues de & */}
-
-
-
-
-    
- 
-    
-
-    
-    </>
+  </>
   )
 }
 
-export default DetailContact
+export default CharacterDetail
