@@ -9,9 +9,10 @@ ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     padding: 0;
     justify-content: center;
+    margin-inline: 20rem;
 }
 
 .no-matches {

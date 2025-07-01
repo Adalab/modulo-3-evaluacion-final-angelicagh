@@ -30,7 +30,7 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
 
   return (
     <>
-      <h1 >Character finder</h1>
+    <div className="filters-container">
       <form className="filters" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Search by character </label>
@@ -57,9 +57,10 @@ function Filters({psetSearchName, psearchName, phouse, psetSearchHouse, psetSear
               ) 
             }  
           </select>
-        </div>
-        <button className="reset" onClick={handleReset}>Reset</button>     
+        </div>    
       </form>
+      <button className="reset" onClick={handleReset}>Reset</button>
+      </div>
     </>
   )
 }

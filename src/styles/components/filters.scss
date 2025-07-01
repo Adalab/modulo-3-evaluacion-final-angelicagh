@@ -15,6 +15,7 @@ input, select, button {
 }
 
 .reset {
+    margin-bottom: 2rem;
     background-color: #f8f0d2;
     border: 2px solid #3b2b16;
     border-radius: 6px;
@@ -28,6 +29,12 @@ input, select, button {
   background-color: #3b2b16;
   color: #f6e8c5;
   box-shadow: 0 0 20px rgba(122, 95, 52, 0.6);
-  
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
