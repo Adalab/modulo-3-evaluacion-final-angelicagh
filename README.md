@@ -6,7 +6,7 @@
 
 ---
 
-## 🧱 Estructura del proyecto
+## 🔮 Estructura del proyecto
 
 - **App**: componente principal que gestiona rutas, lógica y fetch de datos.
 - **Header**: contiene el logo.
@@ -36,4 +36,9 @@
 - 🎨 **CSS**
 - 🌐 **Fetch** para llamadas a la API
 - 📚 [API pública de personajes de Harry Potter](https://hp-api.onrender.com/)
+
+---
+
+## 🧪 ¿Dónde puedes ver el proyecto?
+🔗 Haz clic aquí para visitar la aplicación
 
