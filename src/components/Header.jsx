@@ -14,7 +14,7 @@ function Header() {
     </em></h3>
     <div className="logo-container">
       <img className="logo" src={logo} alt="Logo Harry Potter" />
-    </div>  
+    </div>      
     </>
   )
 }
