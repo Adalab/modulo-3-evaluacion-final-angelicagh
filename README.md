@@ -2,7 +2,7 @@
 
 ¡Bienvenidx a **Harry Potter Character Finder**!
 
-✨ En esta aplicación web puedes buscar personajes del universo mágico de **Harry Potter**. Conoce a los personajes de Hogwarts y búscalos por **nombre**, **casa** y **género**. Además, si haces clic en un personaje descubrirás más cosas sobre él/ella/elle.
+💫 En esta aplicación web puedes buscar personajes del universo mágico de **Harry Potter**. Conoce a los personajes de Hogwarts y búscalos por **nombre**, **casa** y **género**. Además, si haces clic en un personaje descubrirás más cosas sobre él/ella/elle.
 
 ---
 
@@ -24,6 +24,7 @@
 
 🪄 Además, incluye **detalles mágicos** como:
 - Un mensaje personalizado cuando no se encuentra un personaje o se introduce un ID inválido.
+- URL del personaje compatible.
 - Un cursor en forma de varita para dar un toque especial al navegar.
 
 ---
@@ -35,25 +36,4 @@
 - 🎨 **CSS**
 - 🌐 **Fetch** para llamadas a la API
 - 📚 [API pública de personajes de Harry Potter](https://hp-api.onrender.com/)
-
----
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
