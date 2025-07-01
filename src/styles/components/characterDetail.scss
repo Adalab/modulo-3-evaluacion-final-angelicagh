@@ -69,10 +69,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  
 }
-
-
 
 .button {
   font-family: "Milonga";
@@ -87,7 +84,6 @@
   border: 2px solid #3b2b16;
   border-radius: 6px;
   text-decoration: none;
-
   box-shadow: 0 0 10px rgba(122, 95, 52, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -96,8 +92,23 @@
   background-color: #3b2b16;
   color: #f6e8c5;
   box-shadow: 0 0 20px rgba(122, 95, 52, 0.6);
-  
 }
+
+.character-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.character-detail-no-matches {
+  margin-top: 2rem;
+  color: rgb(194, 30, 30);
+  background-color: rgb(253, 187, 3);
+  padding: 1rem; 
+}
+
+
  
 
 

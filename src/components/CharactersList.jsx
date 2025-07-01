@@ -10,7 +10,7 @@ function CharactersList({pcharactersList} ) {
       <ul>
       {
         pcharactersList.length === 0 //
-          ? <p className="no-matches">No matches</p>
+          ? <p className="no-matches">We've searched all over Hogwarts, Diagon Alley, and even the Forbidden Forest, but we couldn't find any character with that name</p>
           : pcharactersList.map(item => {
             return (
               <CharacterCard key={item.id} pitem={item}/>

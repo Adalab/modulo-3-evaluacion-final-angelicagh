@@ -19,5 +19,34 @@ body {
   cursor: url("../images/wand1.png"), auto;
 }
 
+/* h2 {
+  color: rgb(194, 30, 30);
+  background-color: rgb(253, 187, 3);
+  width: 20rem;
+  text-align: center;
+ 
+} */
+
 /* PONER RESPONSIVE */
+
+.page-not-found {
+  width: 25rem;
+  color: rgb(194, 30, 30);
+  background-color: rgb(253, 187, 3);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.page-not-found-2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.go-back {
+  margin-top: 2rem;
+}
 

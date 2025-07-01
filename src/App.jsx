@@ -5,6 +5,7 @@ import Filters from './components/Filters'
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router'
 import CharacterDetail from './components/CharacterDetail'
+import { Link } from 'react-router'
 
 function App() {
 
@@ -53,7 +54,18 @@ function App() {
         </>
       }></Route>        
       <Route  path="/detail/:id" element={<CharacterDetail pcharactersList={filterCharacters}/>}></Route>
-      <Route path="*" element={<h1>Page not found</h1>}></Route> 
+      <Route path="*" 
+      element={
+        <div>
+          <h2 className="page-not-found">Spell failed!</h2>
+          <p className="page-not-found-2">Sorry, but this page isn't even on the Marauder’s Map</p>
+          <p className="page-not-found-2">Perhaps a Confundus Charm brought you here...</p>
+          <div className="card-button go-back">
+          <Link to="/" className="button">Go back</Link>
+          </div>
+        </div>
+        }>
+      </Route> 
     </Routes>
     </>
   )

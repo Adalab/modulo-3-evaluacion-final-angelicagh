@@ -14,6 +14,17 @@ function CharacterDetail({pcharactersList}) {
   pcharactersList.find(item => item.id === id) ||
   JSON.parse(localStorage.getItem("characters") || "[]").find(item => item.id === id);
 
+
+//CUANDO BUSCAS UN ID QUE NO COINCIDE CON NINGUN PERSONAJE DEL API
+  if (!selectedCharacter) {
+    return (
+      <div className="character-detail-container">
+          <h2 className="character-detail-no-matches">The Ministry of Magic cannot find this character</h2>
+        <Link to="/" className="button">Go back</Link>
+      </div>
+    );
+  }
+
   return (
     <>
     <h1>Character card</h1>
