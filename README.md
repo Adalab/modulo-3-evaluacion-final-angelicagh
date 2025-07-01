@@ -2,7 +2,7 @@
 
 ¡Bienvenidx a **Harry Potter Character Finder**!
 
-💫 En esta aplicación web puedes buscar personajes del universo mágico de **Harry Potter**. Conoce a los personajes de Hogwarts y búscalos por **nombre**, **casa** y **género**. Además, si haces clic en un personaje descubrirás más cosas sobre él/ella/elle.
+💫 En esta aplicación web puedes buscar personajes del universo mágico de **Harry Potter**. Conoce a los personajes de Hogwarts y búscalos por **nombre**, **casa** y **género**. Además, si haces clic en un personaje descubrirás detalles que te sorprenderán.
 
 ---
 
